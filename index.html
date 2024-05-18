@@ -204,13 +204,19 @@
             document.querySelector(".part1").style.boxShadow = " 0px 0px 20px 1px #b7b3b3";
             document.querySelector(".logo").style.color = "black"; 
             document.querySelector(".part1 .sign").style.color = "black"; 
-            document.querySelectorAll(".container .links ").style.color = "black"; 
+            const link = document.querySelectorAll(".link"); 
+            link.forEach(element => {
+                element.style.color = "black";
+            });
             
         }
         else if (window.pageYOffset < 10){
             document.querySelector(".part1").style.backgroundColor = "transparent"; 
             document.querySelector(".part1").style.boxShadow = "none";
-            document.querySelector(".container .links .link").color = "red"; 
+            const links = document.querySelectorAll(".container .links .link");
+            links.forEach(element=> {
+                element.style.color="white";
+            })
             document.querySelector(".logo").style.color = "#fff"; 
             document.querySelector(".part1 .sign").style.color = "#fff"; 
           
