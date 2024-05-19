@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="testCenterStyle.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
     <title>أكاديمية طويق</title>
 </head>
 <body>
@@ -75,6 +76,36 @@
         </section>
 
     </section>
+    <script>
+        window.onscroll = function (){
+         if(window.pageYOffset > 10){
+         
+              document.querySelector(".part1").style.backgroundColor = "#fff";
+             document.querySelector(".part1").style.boxShadow = " 0px 0px 20px 1px #b7b3b3";
+             document.querySelector(".logo").style.color = "black"; 
+             document.querySelector(".part1 .sign").style.color = "black"; 
+             const link = document.querySelectorAll(".link"); 
+             link.forEach(element => {
+                 element.style.color = "black";
+             });
+             
+         }
+         else if (window.pageYOffset < 10){
+             document.querySelector(".part1").style.backgroundColor = "transparent"; 
+             document.querySelector(".part1").style.boxShadow = "none";
+             const links = document.querySelectorAll(".container .links .link");
+             links.forEach(element=> {
+                 element.style.color="white";
+             })
+             document.querySelector(".logo").style.color = "#fff"; 
+             document.querySelector(".part1 .sign").style.color = "#fff"; 
+           
+         
+           
+         }
+        }
+        
+   </script>
 </body>
 <footer>
     <div class="contents">

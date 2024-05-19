@@ -113,6 +113,18 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
+footer>.icon>i {
+    color:  rgb(76 53 147);
+    width: 2.5vw;
+    height: 3vh;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+
+}
 :root{
     --textHeaderW: Next-Bold;
     --textHeaderColor:rgb(78 55 151);
