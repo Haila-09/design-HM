@@ -666,6 +666,10 @@ footer .icon i {
     margin-right: 5px;
 
 }
+footer .icon i:hover{
+    width: 3vw;
+    height: 3.5vh;
+}
 footer .the-img img{
     height: 12rem;
     width: 12rem;
